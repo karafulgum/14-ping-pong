@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+
+}
+
+.footer-form {
+  width: 100%;
+
+  &__group {
+    display: flex;
+
+    &--label {
+      flex-grow: 1;
+      padding: 0.5rem;
+      background: $c-nav-bar;
+      font-size: 0.8rem;
+      color: #fff;
+      border-right: 0.2px solid #424b95;
+
+      &:last-of-type {
+        border-right: 0;
+      }
+    }
+
+    &--input {
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-between;
+      padding: 0.5rem;
+      border-right: 0.2px solid #424b95;
+
+      &:last-of-type {
+        border-right: 0;
+      }
+
+    }
+  }
+}
+
+.btn--submit {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  background: #e4521b;
+  color: #fff;
+  width: 100%;
+}

@@ -173,27 +173,26 @@
         </div>
       </div>
     </div>
-  </div>
-  </div>
+
 
   <div class="footer">
     <form class="footer-form">
-      <div class="footer-form-label">
-        <label for="player-one-name">Contestant 1 Name</label>
-        <label for="player-one-score">Contestant 1 Score</label>
-        <label for="player-two-name">Contestant 2 Name</label>
-        <label for="player-two-score">Contestant 2 Score</label>
-      </div>
-      <div class="footer-form-input">
-        <input type="text" class="footer-form__playerOneName" name="playerOneName" placeholder="Contestant 1 Name" id="player-one-name">
-        <input type="number" class="footer-form__playerOneScore" name="playerOneScore" placeholder="Contestant 1 Score" id="player-one-score">
-        <input type="text" class="footer-form__playerTwoName" name="playerTwoName" placeholder="Contestant 2 Name" id="player-two-name">
-        <input type="number" class="footer-form__playerTwoScore" name="playerTwoScore" placeholder="Contestant 2 Score" id="player-two-score">
+      <div class="footer-form__group">
+        <label class="footer-form__group--label" for="player-one-name">Contestant 1 Name</label>
+        <label class="footer-form__group--label" for="player-one-score">Contestant 1 Score</label>
+        <label class="footer-form__group--label" for="player-two-name">Contestant 2 Name</label>
+        <label class="footer-form__group--label" for="player-two-score">Contestant 2 Score</label>      </div>
+      <div class="footer-form__group">
+        <input type="text" class="footer-form__group--input" name="playerOneName" placeholder="Contestant 1 Name" id="player-one-name">
+        <input type="number" class="footer-form__group--input" name="playerOneScore" placeholder="Contestant 1 Score" id="player-one-score">
+        <input type="text" class="footer-form__group--input" name="playerTwoName" placeholder="Contestant 2 Name" id="player-two-name">
+        <input type="number" class="footer-form__group--input" name="playerTwoScore" placeholder="Contestant 2 Score" id="player-two-score">
       </div>
       <button class="btn btn--submit" type="submit">Score!</button>
     </form>
   </div>
   </div>
+
 
   <script src="/app.js" charset="utf-8"></script>
 </body>
