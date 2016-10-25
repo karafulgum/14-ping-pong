@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: $c-nav-bar;
+  color: #fff;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+  &__title {
+    margin: 0;
+    padding: 1rem 0;
+
+  }
+}
