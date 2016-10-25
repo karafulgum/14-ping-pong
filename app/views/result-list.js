@@ -8,16 +8,16 @@ class ResultItemView {
     this.el.classList.add('grid__item');
 
     this.el.innerHTML = `
-      <p class="grid__item--header">Oct. 24 2:00PM</p>
+      <p class="grid__item--header"></p>
       <div class="grid__item--content">
         <div class="grid__item--players">
-          <p class="playerOne">Dan</p>
+          <p class="playerOne"></p>
           <p class="vs">vs</p>
-          <p class="playerTwo">Ryan</p>
+          <p class="playerTwo"></p>
           </div>
           <div class="grid__item--score">
-            <p class="playerOneScore">1</p>
-            <p class="playerTwoScore">11</p>
+            <p class="playerOneScore"></p>
+            <p class="playerTwoScore"></p>
           </div>`;
   }
 
