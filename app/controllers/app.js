@@ -35,11 +35,13 @@ export default class AppController {
         score_1: scores[0],
         score_2: scores[1],
       }),
+
     }).then((res) => res.json())
     .then((data) => {
-      this.model = [data, ...this.model];
+      this.model.games = [data.game, ...this.model.games];
 
       this.resultView.model = this.model;
+
 
       this.resultView.render();
     });
