@@ -12,7 +12,7 @@ export default class AppController {
     this.formView = new FormView(this.appElement.querySelector('.footer-form'), this);
 
     // Grab our data from the API
-    fetch('https://hidden-thicket-10616.herokuapp.com/games')
+    fetch('https://secure-scrubland-96387.herokuapp.com/games')
     .then((res) => res.json())
     .then((data) => {
       this.model = data;
@@ -23,22 +23,22 @@ export default class AppController {
     });
   }
 
-  logGame(players, scores) {
-    fetch('https://hidden-thicket-10616.herokuapp.com/games', {
+  logGame(player, score) {
+    fetch('https://secure-scrubland-96387.herokuapp.com/games', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        player_1: players[0],
-        player_2: players[1],
-        score_1: scores[0],
-        score_2: scores[1],
+        player_1: document.querySelector('#player-one-name').value,
+        player_2: document.querySelector('#player-two-name').value,
+        score_1: document.querySelector('#player-one-score').value,
+        score_2: document.querySelector('#player-two-score').value,
       }),
 
     }).then((res) => res.json())
     .then((data) => {
-      this.model.games = [data.game, ...this.model.games];
+      this.model = [data, ...this.model];
 
       this.resultView.model = this.model;
 
