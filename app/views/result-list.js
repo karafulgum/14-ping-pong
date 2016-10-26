@@ -11,13 +11,13 @@ class ResultItemView {
       <p class="grid__item--header"></p>
       <div class="grid__item--content">
         <div class="grid__item--players">
-          <p class="playerOne"></p>
+          <p class="playerOne">Dan</p>
           <p class="vs">vs</p>
-          <p class="playerTwo"></p>
+          <p class="playerTwo">Ryan</p>
           </div>
           <div class="grid__item--score">
-            <p class="playerOneScore"></p>
-            <p class="playerTwoScore"></p>
+            <p class="playerOneScore">1</p>
+            <p class="playerTwoScore">11</p>
           </div>`;
   }
 
