@@ -22,7 +22,7 @@ export default class FormView {
       this.el.querySelector('#player-one-score').value = '';
       this.el.querySelector('#player-two-score').value = '';
     };
-    // debugger;
+
     this.el.addEventListener('submit', onsubmit);
   }
 }

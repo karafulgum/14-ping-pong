@@ -11,22 +11,22 @@ class ResultItemView {
       <p class="grid__item--header"></p>
       <div class="grid__item--content">
         <div class="grid__item--players">
-          <p class="playerOne">Dan</p>
+          <p class="playerOne"></p>
           <p class="vs">vs</p>
-          <p class="playerTwo">Ryan</p>
+          <p class="playerTwo"></p>
           </div>
           <div class="grid__item--score">
-            <p class="playerOneScore">1</p>
-            <p class="playerTwoScore">11</p>
+            <p class="playerOneScore"></p>
+            <p class="playerTwoScore"></p>
           </div>`;
   }
 
   render() {
-    this.el.querySelector('.grid__item--header').innerText = this.model.time;
-    this.el.querySelector('.playerOne').innerText = this.model.players[0].name;
-    this.el.querySelector('.playerTwo').innerText = this.model.players[1].name;
-    this.el.querySelector('.playerOneScore').innerText = this.model.players[0].score;
-    this.el.querySelector('.playerTwoScore').innerText = this.model.players[1].score;
+    this.el.querySelector('.grid__item--header').innerText = this.model.date;
+    this.el.querySelector('.playerOne').innerText = this.model.player_1;
+    this.el.querySelector('.playerTwo').innerText = this.model.player_2;
+    this.el.querySelector('.playerOneScore').innerText = this.model.score_1;
+    this.el.querySelector('.playerTwoScore').innerText = this.model.score_2;
   }
 }
 
@@ -40,7 +40,7 @@ export default class ResultList {
     this.el.innerHTML = '';
 
     // Loop through our model
-    this.model.games.forEach((result) => {
+    this.model.forEach((result) => {
       // Create a new result item view
       const row = new ResultItemView(result);
       row.render();
